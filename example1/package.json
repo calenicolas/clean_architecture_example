@@ -1,0 +1,26 @@
+{
+  "name": "example1",
+  "version": "1.0.0",
+  "description": "Visión personal sobre como realizar correctamente una implementación de arquitectura limpia",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calenicolas/clean_architecture_example.git"
+  },
+  "author": "perry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calenicolas/clean_architecture_example/issues"
+  },
+  "homepage": "https://github.com/calenicolas/clean_architecture_example#readme",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  }
+}
