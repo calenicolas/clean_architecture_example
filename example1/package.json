@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require utils/promise.parallel.js --recursive test"
   },
   "repository": {
     "type": "git",
