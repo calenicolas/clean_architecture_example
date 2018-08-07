@@ -10,11 +10,11 @@ function FreeItemShippingCost (itemShippingCost) {
 
 /**
  *
- * @param {ItemShippingCostRenderer} renderer
+ * @param {ItemShippingCostRepresentation} representation
  */
-FreeItemShippingCost.prototype.renderIn = function(renderer){
+FreeItemShippingCost.prototype.renderIn = function(representation){
 
-    return renderer.showFreeItemShippingCost(this._itemShippingCost._itemId);
+    return representation.showFreeItemShippingCost(this._itemShippingCost._itemId);
 };
 
 module.exports = FreeItemShippingCost;

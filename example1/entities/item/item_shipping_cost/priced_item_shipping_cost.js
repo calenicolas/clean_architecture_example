@@ -12,11 +12,11 @@ function PricedItemShippingCost(itemId, costAsFloat) {
 
 /**
  *
- * @param {ItemShippingCostRenderer} renderer
+ * @param {ItemShippingCostRepresentation} representation
  */
-PricedItemShippingCost.prototype.renderIn = function(renderer){
+PricedItemShippingCost.prototype.renderIn = function(representation){
 
-    return renderer.showItemShippingCost(this._itemId, this._costAsFloat);
+    return representation.showItemShippingCost(this._itemId, this._costAsFloat);
 };
 
 module.exports = PricedItemShippingCost;

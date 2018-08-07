@@ -6,8 +6,8 @@ function ItemShippingCost () {}
 
 /**
  *
- * @param {ItemShippingCostRenderer} renderer
+ * @param {ItemShippingCostRepresentation} representation
  */
-ItemShippingCost.prototype.renderIn = function(renderer){};
+ItemShippingCost.prototype.renderIn = function(representation){};
 
 module.exports = ItemShippingCost;
