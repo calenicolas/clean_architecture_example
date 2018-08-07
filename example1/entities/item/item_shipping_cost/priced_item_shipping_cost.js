@@ -6,7 +6,7 @@
  */
 function PricedItemShippingCost(itemId, costAsFloat) {
 
-    this._itemId = itemShippingCost;
+    this._itemId = itemId;
     this._costAsFloat = costAsFloat;
 }
 

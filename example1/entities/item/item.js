@@ -1,6 +1,6 @@
 
 const ItemPrice = require('./item_price');
-const PricedItemShippingCost = require('./item_shipping_cost/item_shipping_cost');
+const PricedItemShippingCost = require('./item_shipping_cost/priced_item_shipping_cost');
 
 class Item {
 
