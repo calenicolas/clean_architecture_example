@@ -3,8 +3,7 @@
  */
 class TestPresenter {
 
-    constructor(itemId, buyerId){
-    }
+    constructor(itemId, buyerId){}
 }
 
 module.exports = TestPresenter;

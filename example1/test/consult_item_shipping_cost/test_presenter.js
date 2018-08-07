@@ -1,6 +1,7 @@
 /**
- *
  * @implements {ItemShippingCostResponse}
+ * @implements {ItemShippingCostRenderer}
+ * @implements {ItemFreeShippingCostRenderer}
  */
 class TestPresenter {
 

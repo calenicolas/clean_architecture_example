@@ -1,5 +1,5 @@
 /**
- * s
+ * 
  * @interface
  */
 class ShowItemShippingCostEntityGateway {

@@ -8,7 +8,12 @@ class Buyer {
         this._loyaltyLevel = new LoyaltyLevel2();
     }
 
-    asksForItemShippingCost(item){
+    /**
+     *
+     * @param {Item} item
+     * @return {ItemShippingCost}
+     */
+    asksForItemShippingCost(item) {
 
         return item.showShippingCost(this._loyaltyLevel);
     }

@@ -6,6 +6,10 @@ class ItemShippingCost {
         this._costAsFloat = costAsFloat;
     }
 
+    /**
+     *
+     * @param {ItemShippingCostRenderer} renderer
+     */
     renderIn(renderer){
 
         return renderer.showItemShippingCost(this._itemId, this._costAsFloat);
