@@ -1,5 +1,6 @@
 /**
  * @implements {ShowItemShippingCostEntityGateway}
+ * @constructor
  */
 function TestEntityGateway() {
 
