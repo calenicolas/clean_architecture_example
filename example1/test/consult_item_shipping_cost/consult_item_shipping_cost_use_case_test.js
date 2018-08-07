@@ -1,4 +1,5 @@
-describe("shows the item's shipping cost for a buyer", function() {
+describe("shows the item's shipping cost for a buyer based on the item price" +
+    "and the buyer loyalty level", function() {
 
     const should = require('should');
 
