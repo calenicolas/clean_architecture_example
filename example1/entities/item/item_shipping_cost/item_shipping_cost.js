@@ -1,19 +1,13 @@
-class ItemShippingCost {
+/**
+ *
+ * @interface
+ */
+function ItemShippingCost () {}
 
-    constructor(itemId, costAsFloat){
-
-        this._itemId = itemId;
-        this._costAsFloat = costAsFloat;
-    }
-
-    /**
-     *
-     * @param {ItemShippingCostRenderer} renderer
-     */
-    renderIn(renderer){
-
-        return renderer.showItemShippingCost(this._itemId, this._costAsFloat);
-    }
-}
+/**
+ *
+ * @param {ItemShippingCostRenderer} renderer
+ */
+ItemShippingCost.prototype.renderIn = function(renderer){};
 
 module.exports = ItemShippingCost;

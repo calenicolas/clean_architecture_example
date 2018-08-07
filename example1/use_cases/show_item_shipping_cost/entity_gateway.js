@@ -2,15 +2,17 @@
  * 
  * @interface
  */
-class ShowItemShippingCostEntityGateway {
+function ShowItemShippingCostEntityGateway (){}
 
-    /**
-     * @param {ItemShippingCostConsult} consult
-     */
-    findItemByRequest = function(consult) {}
 
-    /**
-     * @param {ItemShippingCostConsult} consult
-     */
-    findBuyerByRequest = function(consult) {}
-}
+/**
+ * @param {ItemShippingCostConsult} consult
+ * @return {Promise}
+ */
+ShowItemShippingCostEntityGateway.prototype.findItemByRequest = function(consult) {};
+
+/**
+ * @param {ItemShippingCostConsult} consult
+ * @return {Promise}
+ */
+ShowItemShippingCostEntityGateway.prototype.findBuyerByRequest = function(consult) {};

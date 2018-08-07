@@ -2,13 +2,12 @@
  *
  * @interface
  */
-class ShowItemShippingCostUseCase {
+function ShowItemShippingCostUseCase(){}
 
-    /**
-     *
-     * @param {ItemShippingCostConsult} consult
-     * @param {ItemShippingCostResponse} response
-     * @return {Promise}
-     */
-    execute(consult, response){}
-}
+/**
+ *
+ * @param {ItemShippingCostConsult} consult
+ * @param {ItemShippingCostResponse} response
+ * @return {Promise}
+ */
+ShowItemShippingCostUseCase.prototype.execute = function(consult, response){}

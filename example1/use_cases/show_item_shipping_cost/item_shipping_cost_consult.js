@@ -1,4 +1,4 @@
 /**
  * @interface
  */
-class ItemShippingCostConsult{}
+function ItemShippingCostConsult(){}

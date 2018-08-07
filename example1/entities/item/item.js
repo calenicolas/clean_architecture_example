@@ -1,6 +1,6 @@
 
 const ItemPrice = require('./item_price');
-const ItemShippingCost = require('./item_shipping_cost/item_shipping_cost');
+const PricedItemShippingCost = require('./item_shipping_cost/item_shipping_cost');
 
 class Item {
 
@@ -18,7 +18,7 @@ class Item {
 
         return loyaltyLevel.calculateShippingCost(
             new ItemPrice(this._model.price),
-            new ItemShippingCost(this._model.id, this._model.shipping_price)
+            new PricedItemShippingCost(this._model.id, this._model.shipping_price)
         );
     }
 }

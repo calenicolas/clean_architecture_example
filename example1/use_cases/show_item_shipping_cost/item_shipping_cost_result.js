@@ -1,7 +1,11 @@
 /**
  * @interface
  */
-class ItemShippingCostResponse {
+function ItemShippingCostResponse(){}
 
-    renderItemShippingCost(itemShippingCost){}
-}
+
+/**
+ *
+ * @param {ItemShippingCost} itemShippingCost
+ */
+ItemShippingCostResponse.prototype.renderItemShippingCost = function(itemShippingCost){};

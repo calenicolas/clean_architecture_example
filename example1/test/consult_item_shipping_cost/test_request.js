@@ -1,9 +1,8 @@
 /**
+ * @param {string} itemId
+ * @param {string} buyerId
  * @implements {ItemShippingCostConsult}
  */
-class TestPresenter {
-
-    constructor(itemId, buyerId){}
-}
+function TestPresenter(itemId, buyerId) {}
 
 module.exports = TestPresenter;

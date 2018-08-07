@@ -1,30 +1,29 @@
 /**
  * @implements {ItemShippingCostResponse}
  * @implements {ItemShippingCostRenderer}
- * @implements {ItemFreeShippingCostRenderer}
+ * @constructor
  */
-class TestPresenter {
+function TestPresenter(){}
 
-    renderItemShippingCost(itemShippingCost) {
+TestPresenter.prototype.renderItemShippingCost = function(itemShippingCost) {
 
-        return itemShippingCost.renderIn(this);
-    }
+    return itemShippingCost.renderIn(this);
+};
 
-    showItemShippingCost(itemId, itemShippingCostAsFloat){
+TestPresenter.prototype.showItemShippingCost = function(itemId, itemShippingCostAsFloat){
 
-        return {
-            item_id: itemId,
-            shipping_price: itemShippingCostAsFloat
-        };
-    }
+    return {
+        item_id: itemId,
+        shipping_price: itemShippingCostAsFloat
+    };
+};
 
-    showFreeItemShippingCost(itemId){
+TestPresenter.prototype.showFreeItemShippingCost = function(itemId){
 
-        return {
-            item_id: itemId,
-            shipping_price: 'Es gratis vieja!'
-        };
-    }
-}
+    return {
+        item_id: itemId,
+        shipping_price: 'Es gratis vieja!'
+    };
+};
 
 module.exports = TestPresenter;
