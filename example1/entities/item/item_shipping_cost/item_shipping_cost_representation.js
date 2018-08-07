@@ -1,7 +1,7 @@
 /**
  * @interface
  */
-class ItemShippingCostRenderer{
+class ItemShippingCostRepresentation{
 
     showItemShippingCost(itemId, shippingCostAsFloat){}
 

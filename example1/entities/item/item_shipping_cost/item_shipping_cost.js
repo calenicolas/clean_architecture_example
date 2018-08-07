@@ -8,11 +8,11 @@ class ItemShippingCost {
 
     /**
      *
-     * @param {ItemShippingCostRenderer} renderer
+     * @param {ItemShippingCostRepresentation} representation
      */
-    renderIn(renderer){
+    renderIn(representation){
 
-        return renderer.showItemShippingCost(this._itemId, this._costAsFloat);
+        return representation.showItemShippingCost(this._itemId, this._costAsFloat);
     }
 }
 

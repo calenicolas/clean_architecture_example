@@ -7,11 +7,11 @@ class FreeItemShippingCost {
 
     /**
      *
-     * @param {showFreeItemShippingCost} renderer
+     * @param {ItemShippingCostRepresentation} representation
      */
-    renderIn(renderer){
+    renderIn(representation){
 
-        return renderer.showFreeItemShippingCost(this._itemShippingCost._itemId);
+        return representation.showFreeItemShippingCost(this._itemShippingCost._itemId);
     }
 }
 
