@@ -27,7 +27,7 @@ Le pasa la consulta del caso de uso y que el entityGw se curta.
 
 El UC (use case, en mi ejemplo lo vemos en (este file)[]) propone una interfaz ((este file)[]) en la cuál va a renderear su resultado. Es una sola interfaz. Del otro lado puede ser implementada por un composite / facade de varias otras cosas. Bleh. Al caso de uso le interesa tener un lugar donde renderear su resultado.
 
-## Las entidades de negocio y sus representaciones
+## Las entidades de negocio y sus representaciones
 
 Las entidades saben representarse por si mismas. Pero... cómo hacen esto sin violar su encapsulamiento?
 Mediante el mismo patrón que vimos hasta ahora. _Humble Object_!.
