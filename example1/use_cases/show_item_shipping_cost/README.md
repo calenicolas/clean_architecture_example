@@ -20,14 +20,14 @@ Los casos donde se da esta situación en mi ejemplo son:
 
 ## Use Case y su entity gateway
 
-El UC (use case, en mi ejemplo lo vemos en (este file)[]) propone una interfaz ((este file)[]) de la cuál va a sacar las entidades que el caso de uso necesita hacer interactuar. Es una sola interfaz. Del otro lado puede ser implementada por un composite / facade de varias otras cosas. Bleh. Al caso de uso le interesa tener un lugar donde pedir un buyer y un item.
+El UC (use case, en mi ejemplo lo vemos en [este file](https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/index.js)) propone una interfaz ([este file](https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/entity_gateway.js)) de la cuál va a sacar las entidades que el caso de uso necesita hacer interactuar. Es una sola interfaz. Del otro lado puede ser implementada por un composite / facade de varias otras cosas. Bleh. Al caso de uso le interesa tener un lugar donde pedir un buyer y un item.
 Le pasa la consulta del caso de uso y que el entityGw se curta.
 
 ![alt text](https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/UC%20Entity%20GW%20Boundary.png?raw=true)
 
 ## El resultado del UC y su presenter
 
-El UC (use case, en mi ejemplo lo vemos en (este file)[]) propone una interfaz ((este file)[]) en la cuál va a renderear su resultado. Es una sola interfaz. Del otro lado puede ser implementada por un composite / facade de varias otras cosas. Bleh. Al caso de uso le interesa tener un lugar donde renderear su resultado.
+El UC (use case, en mi ejemplo lo vemos en [este file](https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/index.js)) propone una interfaz ((este file)[https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/item_shipping_cost_response.js]) en la cuál va a renderear su resultado. Es una sola interfaz. Del otro lado puede ser implementada por un composite / facade de varias otras cosas. Bleh. Al caso de uso le interesa tener un lugar donde renderear su resultado.
 
 ![alt text](https://github.com/calenicolas/clean_architecture_example/blob/es5/example1/use_cases/show_item_shipping_cost/UC%20Result%20Boundary.png?raw=true)
 
