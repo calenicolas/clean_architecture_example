@@ -10,4 +10,4 @@ function ShowItemShippingCostUseCase(){}
  * @param {ItemShippingCostResponse} response
  * @return {Promise}
  */
-ShowItemShippingCostUseCase.prototype.execute = function(consult, response){}
+ShowItemShippingCostUseCase.prototype.execute = function(consult, response){};

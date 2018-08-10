@@ -12,7 +12,7 @@ function FreeItemShippingCost (itemShippingCost) {
  *
  * @param {ItemShippingCostRepresentation} representation
  */
-FreeItemShippingCost.prototype.renderIn = function(representation){
+FreeItemShippingCost.prototype.representIn = function(representation){
 
     return representation.showFreeItemShippingCost(this._itemShippingCost._itemId);
 };

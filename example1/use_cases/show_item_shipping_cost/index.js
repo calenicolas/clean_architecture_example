@@ -1,4 +1,6 @@
 
+const ItemShippingCostResult = require('./item_shipping_cost_result');
+
 /**
  * @implements {ShowItemShippingCostUseCase}
  * @param {ShowItemShippingCostEntityGateway} entityGateway
@@ -25,7 +27,9 @@ ShowItemShippingCost.prototype.execute = function(request, response){
     })
     .then(itemShippingCost => {
 
-        return response.renderItemShippingCost(itemShippingCost);
+        return itemShippingCost.representIn(
+            new ItemShippingCostResult(response)
+        );
     });
 };
 

@@ -16,11 +16,12 @@ describe("shows the item's shipping cost for a buyer based on the item price" +
     const itemId = 'MLX12345678';
     const userId = '5678902123';
 
+    const testEntityGateway = new TestEntityGateway();
+    testEntityGateway.mockBuyer(new Buyer());
+
     it('should show free shipping for buyers with loyalty level 2 and item with price ' +
         'higher than $1200', function(done) {
 
-        const testEntityGateway = new TestEntityGateway();
-        testEntityGateway.mockBuyer(new Buyer());
         testEntityGateway.mockItem(new Item({
             id: itemId,
             price: 1300,
@@ -37,7 +38,8 @@ describe("shows the item's shipping cost for a buyer based on the item price" +
 
                 should(renderedUseCaseResult).be.eql({
                     item_id: itemId,
-                    shipping_price: 'Es gratis vieja!'
+                    message: 'Es gratis vieja!',
+                    price: 0
                 });
 
                 done();
@@ -48,8 +50,6 @@ describe("shows the item's shipping cost for a buyer based on the item price" +
     it('should show shipping with cost for users with loyalty level 2 and item with price ' +
         'lower than $1200', function(done) {
 
-        const testEntityGateway = new TestEntityGateway();
-        testEntityGateway.mockBuyer(new Buyer());
         testEntityGateway.mockItem(new Item({
             id: itemId,
             price: 1100,
@@ -65,8 +65,9 @@ describe("shows the item's shipping cost for a buyer based on the item price" +
             .then(renderedUseCaseResult => {
 
                 should(renderedUseCaseResult).be.eql({
-                    item_id: itemId,
-                    shipping_price: 500
+                    item_id: 'MLX12345678',
+                    message: 'Pagas 500 por el envío del item',
+                    price: 500
                 });
 
                 done();

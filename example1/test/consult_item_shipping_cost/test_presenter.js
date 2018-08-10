@@ -1,28 +1,34 @@
 /**
  * @implements {ItemShippingCostResponse}
- * @implements {ItemShippingCostRepresentation}
  * @constructor
  */
 function TestPresenter(){}
 
-TestPresenter.prototype.renderItemShippingCost = function(itemShippingCost) {
-
-    return itemShippingCost.renderIn(this);
-};
-
-TestPresenter.prototype.showItemShippingCost = function(itemId, itemShippingCostAsFloat){
+/**
+ *
+ * @param {item_id, shipping_cost} resultAsJSON
+ * @return {{item_id: *, shipping_price: *}}
+ */
+TestPresenter.prototype.renderItemWithShippingCost = function(resultAsJSON){
 
     return {
-        item_id: itemId,
-        shipping_price: itemShippingCostAsFloat
+        item_id: resultAsJSON.item_id,
+        message: 'Pagas '.concat(resultAsJSON.shipping_cost).concat(' por el envío del item'),
+        price: resultAsJSON.shipping_cost
     };
 };
 
-TestPresenter.prototype.showFreeItemShippingCost = function(itemId){
+/**
+ *
+ * @param {item_id, shipping_cost} resultAsJSON
+ * @return {{item_id: *, message: string, price: number}}
+ */
+TestPresenter.prototype.renderItemWithFreeShippingCost = function(resultAsJSON){
 
     return {
-        item_id: itemId,
-        shipping_price: 'Es gratis vieja!'
+        item_id: resultAsJSON.item_id,
+        message: 'Es gratis vieja!',
+        price: 0
     };
 };
 

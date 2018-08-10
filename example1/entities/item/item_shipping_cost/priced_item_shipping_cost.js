@@ -14,7 +14,7 @@ function PricedItemShippingCost(itemId, costAsFloat) {
  *
  * @param {ItemShippingCostRepresentation} representation
  */
-PricedItemShippingCost.prototype.renderIn = function(representation){
+PricedItemShippingCost.prototype.representIn = function(representation){
 
     return representation.showItemShippingCost(this._itemId, this._costAsFloat);
 };
